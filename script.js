@@ -95,23 +95,27 @@ const chartData = Object.values(cuisineCounts);
                 }]
             },
             options: {
-                responsive: true,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Restaurant Distribution by Cuisine Type'
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Restaurants'
-                        }
-                    }
-                }
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        title: {
+            display: true,
+            text: 'Restaurant Distribution by Cuisine Type'
+        }
+    },
+    scales: {
+        y: {
+            beginAtZero: true,
+            ticks: {
+                stepSize: 1
+            },
+            title: {
+                display: true,
+                text: 'Number of Restaurants'
             }
+        }
+    }
+}
         });
         
         console.log('Chart created successfully!');
