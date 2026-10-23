@@ -280,11 +280,16 @@ header p {
 /* CHART CONTAINER */
 .chart-container {
     position: relative;
-    height: 20rem;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 350px;
+    margin: 20px auto;
+}
+
+#restaurant-chart {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #rating-chart {
